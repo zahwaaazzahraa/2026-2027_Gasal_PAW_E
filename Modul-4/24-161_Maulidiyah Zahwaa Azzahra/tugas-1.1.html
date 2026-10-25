@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Person Details</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form name="myForm" action="Tugas-1.2.php" method="POST">
+        <fieldset style="width: 450px; padding: 15px; border: 1px solid black;">
+            <legend style="font-weight: bold;">Person Details</legend>
+            
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">Surname:</label>
+                <input type="text" name="surname" size="25">
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">Email address:</label>
+                <input type="text" name="email" size="25">
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">Password:</label>
+                <input type="password" name="password" size="25">
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px; vertical-align:top;">Street Address:</label>
+                <textarea name="address" rows="3" cols="22"></textarea>
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">State:</label>
+                <select name="state">
+                    <option value="">[choose your state]</option>
+                    <option value="1">Australian Capital Territory</option>
+                    <option value="2">Queensland</option>
+                    <option value="3">Victoria</option>
+                    <option value="4">New South Wales</option>
+                    <option value="5">Tasmania</option>
+                    <option value="6">South Australia</option>
+                    <option value="7">Western Australia</option>
+                    <option value="8">Northern Territory</option>
+                </select>
+            </div>
+
+            <input type="hidden" name="country" value="Australia">
+            
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">Gender:</label>
+                <input type="radio" name="sex" value="Male"> Male
+                <input type="radio" name="sex" value="Female"> Female
+            </div>
+
+            <div style="margin-bottom: 8px;">
+                <label style="display:inline-block; text-align:right; width:120px;">Vegetarian?</label>
+                <input type="checkbox" name="vegetarian" value="Yes">
+            </div>
+
+            <div style="text-align: center; margin-top: 12px;">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
